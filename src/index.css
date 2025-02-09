@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+* {
+  letter-spacing: 2px;
+}
+
+.App {
+  min-height: 100vh;
+  background-color: #2e2e2e; /* Charcoal background */
+  color: #f5f5f5;
+}
+
+.search-form {
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-bar {
+  width: 50%;
+  border: 2px solid #f7c27e; /* Light orange/yellow accent */
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #404040;
+  color: #f5f5f5;
+  box-shadow: 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.search-bar::placeholder {
+  color: #cfcfcf;
+}
+
+.search-button {
+  background: #f4a1a1; /* Peach color for actions */
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  color: white;
+  font-size: larger;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #f7c27e; /* Light orange on hover */
+}
+
+.recipes {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.recipe {
+  border-radius: 10px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.7);
+  margin: 20px;
+  background-color: #3b3b3b; /* Darker charcoal for recipe cards */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  min-width: 40%;
+  font-family: "Lobster", cursive;
+}
+
+.image {
+  border-radius: 10px;
+  max-width: 200px;
+  height: auto;
+  margin-right: 20px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.details {
+  flex: 1;
+}
+
+.details ul {
+  padding-left: 20px;
+  list-style-type: square;
+}
+
+.details-button {
+  background: #f4a1a1; /* Peach */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s ease;
+}
+
+.details-button:hover {
+  background: #f7c27e; /* Light orange/yellow on hover */
+}
+
+a {
+  color: #f7c27e;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
